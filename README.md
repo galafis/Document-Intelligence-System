@@ -5,6 +5,22 @@
 ### Overview
 Advanced Document-Intelligence-System with comprehensive functionality and modern technology stack. Features multiple programming languages, interactive web interfaces, and advanced analytics capabilities for professional-grade solutions.
 
+### Pipeline Architecture
+
+```mermaid
+flowchart LR
+    A[Document Input\nPDF / Image / Text] --> B[OCR & Extraction\nText Recognition]
+    B --> C[NLP Processing\nTokenization / Entities]
+    C --> D[Classification\nscikit-learn Models]
+    D --> E[Structured Output\nJSON / CSV / Report]
+
+    subgraph Processing Engine
+        B
+        C
+        D
+    end
+```
+
 ### Author
 **Gabriel Demetrios Lafis**
 - Email: gabrieldemetrios@gmail.com
@@ -144,6 +160,22 @@ ANALYTICS_CONFIG = {
 
 ### Visão Geral
 Document-Intelligence-System avançado com funcionalidade abrangente e stack de tecnologia moderna. Apresenta múltiplas linguagens de programação, interfaces web interativas e capacidades de análise avançadas para soluções de nível profissional.
+
+### Arquitetura do Pipeline
+
+```mermaid
+flowchart LR
+    A[Entrada de Documento\nPDF / Imagem / Texto] --> B[OCR & Extração\nReconhecimento de Texto]
+    B --> C[Processamento NLP\nTokenização / Entidades]
+    C --> D[Classificação\nModelos scikit-learn]
+    D --> E[Saída Estruturada\nJSON / CSV / Relatório]
+
+    subgraph Motor de Processamento
+        B
+        C
+        D
+    end
+```
 
 ### Autor
 **Gabriel Demetrios Lafis**
